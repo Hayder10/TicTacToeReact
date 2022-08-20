@@ -1,12 +1,42 @@
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: lightgrey;
+    font-size: 50px;
+    text-align: center;
+    border: 1px solid grey;
+}
 
-/* 
+.board-row{
+    margin-top: 0px;
+    height: 100px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.board{
+    margin: auto;
+}
 
-*/
+.status{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+}
+
+#restart{
+    background-color: lightblue;
+    border: 0px;
+    border-radius: 5%;
+    text-align: center;
+}
+
