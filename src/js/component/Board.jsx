@@ -1,8 +1,7 @@
 import React , { useState } from 'react'
-import Restartbutton from './Restartbutton.jsx'
 import Square from './Square.jsx'
 
-function Board() {
+function Board( { Xname , Oname} ) {
   const [squares,setSquares] = useState([null,null,null,null,null,null,null,null,null])
   const [isX,setIsX] = useState(true)
   const [turn,setTurn] = useState(0)
@@ -44,16 +43,16 @@ function Board() {
     return null;
   }
 
-  const winner = winnerCheck(squares)
+  var winner = winnerCheck(squares)
   var status = ""
 
   if (winner) {
-    status = 'Winner: '+winner
+    status = 'Winner: '+(!isX ? Xname : Oname)
   }else if(turn === 9){
     status = 'Tie!';
   }
   else{
-    status = `Next player: ${isX ? "X" : "O"}`
+    status = `Next player: ${isX ? Xname : Oname}`
   }
 
   const restarter = () =>{

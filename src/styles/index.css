@@ -40,3 +40,38 @@
     text-align: center;
 }
 
+
+.bodyPlayers{
+    width: 700px;
+    height: 500px;
+    background: lightgrey;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.boxtitle{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    text-justify: center;
+    padding-top: 70px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.boxfooter{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 40px;
+}
+
+
